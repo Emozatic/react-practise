@@ -2,11 +2,13 @@ import { useState } from "react"
 
 export default function LudoBoard(){
     let[count ,setCount]= useState({blue:0, yellow:0, green:0, red:0});
+    let [arr, setArr]= useState(["no moves"])
 
     let setMovesForBlue = () => {
         setCount((currMove) => {
             return { ...currMove, blue: currMove.blue + 1 }
         })
+        setArr([...arr,"blue moves"]);
     }
 
     let setMovesForGreen = () => {
@@ -28,6 +30,7 @@ export default function LudoBoard(){
     }
     return(
         <>
+        <p>{arr}</p>
         <h1 style={{ color: "blue" }}>{count.blue}</h1>
         <button onClick={setMovesForBlue}>Inc Count</button>
         <br />
