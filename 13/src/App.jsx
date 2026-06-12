@@ -1,13 +1,12 @@
 import { useState } from 'react'
-import Array from './Array'
 import './App.css'
-
-
+import Forms from './Forms'
 function App() {
+
 
   return (
     <>
-     <Array/> 
+      <Forms/>
     </>
   )
 }

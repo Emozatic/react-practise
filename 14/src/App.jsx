@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import Array from './Array'
+import { useState } from 'react';
 import './App.css'
-
+import UseEffect from './UseEffect';
 
 function App() {
+ 
 
   return (
     <>
-     <Array/> 
+    <UseEffect/>
     </>
   )
 }
